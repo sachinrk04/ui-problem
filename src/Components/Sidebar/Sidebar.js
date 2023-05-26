@@ -9,6 +9,15 @@ export default function Sidebar() {
                 <li className={`side-page-nav_item`} >
                     <Link to="/pagination">Pagination</Link>
                 </li>
+                <li className={`side-page-nav_item`} >
+                    <Link to="/countdown-timer">Countdown Timer</Link>
+                </li>
+                <li className={`side-page-nav_item`} >
+                    <Link to="/lazy-loading">Lazy Loading</Link>
+                </li>
+                <li className={`side-page-nav_item`} >
+                    <Link to="/star-rating">Star Rating</Link>
+                </li>
             </ul>
         </div>
     );
