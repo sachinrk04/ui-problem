@@ -18,6 +18,27 @@ export default function Sidebar() {
                 <li className={`side-page-nav_item`} >
                     <Link to="/star-rating">Star Rating</Link>
                 </li>
+                <li className={`side-page-nav_item`} >
+                    <Link to="/text-search">Text Search</Link>
+                </li>
+                <li className={`side-page-nav_item`} >
+                    <Link to="/carousel">Carousel</Link>
+                </li>
+                <li className={`side-page-nav_item`} >
+                    <Link to="/table">Table</Link>
+                </li>
+                <li className={`side-page-nav_item`} >
+                    <Link to="/stop-watch">Stopwatch</Link>
+                </li>
+                <li className={`side-page-nav_item`} >
+                    <Link to="/todo">Todo</Link>
+                </li>
+                <li className={`side-page-nav_item`} >
+                    <Link to="/folder-structure">Folder</Link>
+                </li>
+                <li className={`side-page-nav_item`} >
+                    <Link to="/infinte-scroll">Infinte Scroll</Link>
+                </li>
             </ul>
         </div>
     );
