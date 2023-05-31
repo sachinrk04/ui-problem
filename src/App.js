@@ -13,6 +13,10 @@ import Stopwatch from "./Containers/Stopwatch/Stopwatch";
 import Todo from "./Containers/Todo/Todo";
 import FolderStructure from "./Containers/FolderStructure/FolderStructure";
 import InfinteScroll from "./Containers/InfinteScroll/InfinteScroll";
+import Accordion from "./Containers/Accordion/Accordion";
+import QuoteGenerator from "./Containers/QuoteGenerator/QuoteGenerator";
+import VideoPlayer from "./Containers/VideoPlayer/VideoPlayer";
+import BMICalculator from "./Containers/BMICalculator/BMICalculator";
 
 function App() {
     return ( 
@@ -31,6 +35,10 @@ function App() {
                 <Route path="/todo" element={<Todo />} />
                 <Route path="/folder-structure" element={<FolderStructure />} />
                 <Route path="/infinte-scroll" element={<InfinteScroll />} />
+                <Route path="/accordion" element={<Accordion />} />
+                <Route path="/quote-generator" element={<QuoteGenerator />} />
+                <Route path="/video-player" element={<VideoPlayer />} />
+                <Route path="/BMI-calculator" element={<BMICalculator />} />
             </Route>
         </Routes>
        </div>

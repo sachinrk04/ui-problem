@@ -39,6 +39,18 @@ export default function Sidebar() {
                 <li className={`side-page-nav_item`} >
                     <Link to="/infinte-scroll">Infinte Scroll</Link>
                 </li>
+                <li className={`side-page-nav_item`} >
+                    <Link to="/accordion">Accordion</Link>
+                </li>
+                <li className={`side-page-nav_item`} >
+                    <Link to="/quote-generator">Quote Generator</Link>
+                </li>
+                <li className={`side-page-nav_item`} >
+                    <Link to="/video-player">Video Player</Link>
+                </li>
+                <li className={`side-page-nav_item`} >
+                    <Link to="/BMI-calculator">BMI Calculator</Link>
+                </li>
             </ul>
         </div>
     );
