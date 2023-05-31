@@ -24,20 +24,16 @@ export default function InfinteScroll() {
         getData();
     }, [page]);
 
-    const handleInfiniteScroll = () => {
-        if ( window.innerHeight + document.documentElement.scrollTop  >= document.documentElement.scrollHeight ) {
+    const handleInfiniteScroll = (e) => {
+        const bottom = (e.target.scrollHeight - e.target.scrollTop) <= e.target.clientHeight;
+        if (bottom) {
             setLoading(true);
             setPage((prev) => prev + 1);
         }
     };
 
-    useEffect(() => {
-        window.addEventListener('scroll', () => handleInfiniteScroll("scroll"), true);
-        return () => window.removeEventListener('scroll', () => handleInfiniteScroll("scroll-remove"));
-    }, []);
-  
     return (
-      <div className='infinte-scroll-page'>
+      <div className='infinte-scroll-page' onScroll={handleInfiniteScroll}>
         <View response={response} />
         {loading && <div className="loading"> </div>}
       </div>
