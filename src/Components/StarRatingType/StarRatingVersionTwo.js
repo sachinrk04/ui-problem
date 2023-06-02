@@ -5,8 +5,14 @@ export default function StarRatingVersionTwo(props) {
     const [rating, setRating] = useState(props.rating || 2);
 
     const handleChange = (e) => {
-        setRating(e.target.getAttribute("data"))
+        let rated = parseInt(e.target.getAttribute("data"))
+        if (rated === 1 && rating === 1) {
+            setRating(0)
+        } else {
+            setRating(rated)
+        }
     }
+
     return (
         <div onClick={handleChange}>
             {[...new Array(limit).keys()].map((i) => {

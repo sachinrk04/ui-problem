@@ -5,7 +5,11 @@ export default function StarRatingVersionOne(props) {
   const [rating, setRating] = useState(props.rating || 2);
 
   const handleChange = (index) => {
-    setRating(index)
+    if (index === 1 && rating === 1) {
+        setRating(0)
+    } else {
+        setRating(index)
+    }
   }
 
   return (
