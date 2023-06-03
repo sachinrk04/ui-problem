@@ -4,7 +4,7 @@ import "./Sidebar.scss"
 
 export default function Sidebar() {
     return (
-        <div >
+        <div className='sidebar'>
             <ul className="side-page-nav_items">
                 <li className={`side-page-nav_item`} >
                     <Link to="/pagination">Pagination</Link>
@@ -50,6 +50,12 @@ export default function Sidebar() {
                 </li>
                 <li className={`side-page-nav_item`} >
                     <Link to="/BMI-calculator">BMI Calculator</Link>
+                </li>
+                <li className={`side-page-nav_item`} >
+                    <Link to="/loading-images">Loading Images</Link>
+                </li>
+                <li className={`side-page-nav_item`} >
+                    <Link to="/github-user-search">GitHub User Search</Link>
                 </li>
             </ul>
         </div>

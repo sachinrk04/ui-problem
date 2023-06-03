@@ -5,7 +5,7 @@ import explorer from '../../config/filedata';
 
 export default function FolderStructure() {
     return (
-        <div>
+        <div className='folder-structure'>
             <Folder explorer={explorer} />
         </div>
     )

@@ -17,6 +17,8 @@ import Accordion from "./Containers/Accordion/Accordion";
 import QuoteGenerator from "./Containers/QuoteGenerator/QuoteGenerator";
 import VideoPlayer from "./Containers/VideoPlayer/VideoPlayer";
 import BMICalculator from "./Containers/BMICalculator/BMICalculator";
+import LoadingImages from "./Containers/LoadingImages/LoadingImages";
+import GitHubUserSearch from "./Containers/GitHubUserSearch/GitHubUserSearch";
 
 function App() {
     return ( 
@@ -39,6 +41,8 @@ function App() {
                 <Route path="/quote-generator" element={<QuoteGenerator />} />
                 <Route path="/video-player" element={<VideoPlayer />} />
                 <Route path="/BMI-calculator" element={<BMICalculator />} />
+                <Route path="/loading-images" element={<LoadingImages />} />
+                <Route path="/github-user-search" element={<GitHubUserSearch />} />
             </Route>
         </Routes>
        </div>
