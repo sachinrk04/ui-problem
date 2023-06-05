@@ -60,6 +60,9 @@ export default function Sidebar() {
                 <li className={`side-page-nav_item`} >
                     <Link to="/EMI-calculator">EMI Calculator</Link>
                 </li>
+                <li className={`side-page-nav_item`} >
+                    <Link to="/login-form">LoginForm</Link>
+                </li>
             </ul>
         </div>
     );
