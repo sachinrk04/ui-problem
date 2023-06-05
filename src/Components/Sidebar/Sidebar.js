@@ -57,6 +57,9 @@ export default function Sidebar() {
                 <li className={`side-page-nav_item`} >
                     <Link to="/github-user-search">GitHub User Search</Link>
                 </li>
+                <li className={`side-page-nav_item`} >
+                    <Link to="/EMI-calculator">EMI Calculator</Link>
+                </li>
             </ul>
         </div>
     );

@@ -19,6 +19,7 @@ import VideoPlayer from "./Containers/VideoPlayer/VideoPlayer";
 import BMICalculator from "./Containers/BMICalculator/BMICalculator";
 import LoadingImages from "./Containers/LoadingImages/LoadingImages";
 import GitHubUserSearch from "./Containers/GitHubUserSearch/GitHubUserSearch";
+import EMICalculator from "./Containers/EMICalculator/EMICalculator";
 
 function App() {
     return ( 
@@ -43,6 +44,7 @@ function App() {
                 <Route path="/BMI-calculator" element={<BMICalculator />} />
                 <Route path="/loading-images" element={<LoadingImages />} />
                 <Route path="/github-user-search" element={<GitHubUserSearch />} />
+                <Route path="/EMI-calculator" element={<EMICalculator />} />
             </Route>
         </Routes>
        </div>
