@@ -21,6 +21,7 @@ import LoadingImages from "./Containers/LoadingImages/LoadingImages";
 import GitHubUserSearch from "./Containers/GitHubUserSearch/GitHubUserSearch";
 import EMICalculator from "./Containers/EMICalculator/EMICalculator";
 import LoginForm from "./Containers/LoginForm/LoginForm";
+import ThrottleDebounce from "./Containers/ThrottleDebounce/ThrottleDebounce";
 
 function App() {
     return ( 
@@ -47,6 +48,7 @@ function App() {
                 <Route path="/github-user-search" element={<GitHubUserSearch />} />
                 <Route path="/EMI-calculator" element={<EMICalculator />} />
                 <Route path="/login-form" element={<LoginForm />} />
+                <Route path="/throttle-debounce" element={<ThrottleDebounce />} />
             </Route>
         </Routes>
        </div>
