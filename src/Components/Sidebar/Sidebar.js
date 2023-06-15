@@ -66,6 +66,9 @@ export default function Sidebar() {
                 <li className={`side-page-nav_item`} >
                     <Link to="/throttle-debounce">Throttle and Debounce</Link>
                 </li>
+                <li className={`side-page-nav_item`} >
+                    <Link to="/shopping-cart">Shopping Cart</Link>
+                </li>
             </ul>
         </div>
     );
