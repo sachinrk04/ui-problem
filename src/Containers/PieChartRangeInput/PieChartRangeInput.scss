@@ -1,0 +1,23 @@
+.pie-char-page {
+    padding: 20px;
+    .this-ui {
+        background-color: ghostwhite;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        input {
+            font-size: 20px;
+            margin: 20px;
+            width: 400px;
+        }
+        
+        .piechart {
+            width: 200px;
+            height: 200px;
+            margin: 20px 110px;
+            border-radius: 50%;
+        }
+    }
+}
