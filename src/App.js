@@ -24,6 +24,7 @@ import LoginForm from "./Containers/LoginForm/LoginForm";
 import ThrottleDebounce from "./Containers/ThrottleDebounce/ThrottleDebounce";
 import ShoppingCart from "./Containers/ShoppingCart/ShoppingCart";
 import PieChartRangeInput from "./Containers/PieChartRangeInput/PieChartRangeInput";
+import CssDoodle from "./Containers/CssDoodle/CssDoodle";
 
 function App() {
     return ( 
@@ -53,6 +54,7 @@ function App() {
                 <Route path="/throttle-debounce" element={<ThrottleDebounce />} />
                 <Route path="/shopping-cart" element={<ShoppingCart />} />
                 <Route path="/pie-char-range-input" element={<PieChartRangeInput />} />
+                <Route path="/css-doodle" element={<CssDoodle />} />
             </Route>
         </Routes>
        </div>

@@ -1,0 +1,11 @@
+.css-doodle-body {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .css-doodle-page {
+        background-color: black;
+        padding: 20px;
+        margin: 10px;
+    }
+}

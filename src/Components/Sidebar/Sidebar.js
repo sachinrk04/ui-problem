@@ -72,6 +72,9 @@ export default function Sidebar() {
                 <li className={`side-page-nav_item`} >
                     <Link to="/pie-char-range-input">Pie Chart Range Input</Link>
                 </li>
+                <li className={`side-page-nav_item`} >
+                    <Link to="/css-doodle">Css Doodle</Link>
+                </li>
             </ul>
         </div>
     );
