@@ -75,6 +75,9 @@ export default function Sidebar() {
                 <li className={`side-page-nav_item`} >
                     <Link to="/css-doodle">Css Doodle</Link>
                 </li>
+                <li className={`side-page-nav_item`} >
+                    <Link to="/children-parents-re-renders">Re-renders</Link>
+                </li>
             </ul>
         </div>
     );

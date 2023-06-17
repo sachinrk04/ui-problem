@@ -25,6 +25,7 @@ import ThrottleDebounce from "./Containers/ThrottleDebounce/ThrottleDebounce";
 import ShoppingCart from "./Containers/ShoppingCart/ShoppingCart";
 import PieChartRangeInput from "./Containers/PieChartRangeInput/PieChartRangeInput";
 import CssDoodle from "./Containers/CssDoodle/CssDoodle";
+import ChildrenParentsRerenders from "./Containers/ChildrenParentsRerenders/ChildrenParentsRerenders";
 
 function App() {
     return ( 
@@ -55,6 +56,7 @@ function App() {
                 <Route path="/shopping-cart" element={<ShoppingCart />} />
                 <Route path="/pie-char-range-input" element={<PieChartRangeInput />} />
                 <Route path="/css-doodle" element={<CssDoodle />} />
+                <Route path="/children-parents-re-renders" element={<ChildrenParentsRerenders />} />
             </Route>
         </Routes>
        </div>

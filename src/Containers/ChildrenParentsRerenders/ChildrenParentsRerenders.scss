@@ -1,0 +1,19 @@
+.cp-re-renders-page {
+    padding: 20px;
+    .container {
+        display: flex;
+        // position: relative;
+        .moving-div {
+            position: absolute;
+            background: salmon;
+        }
+        .column {
+            width: 50%;
+        }
+        
+        .child {
+            padding: 10px;
+            cursor: pointer;
+        }
+    }
+}
