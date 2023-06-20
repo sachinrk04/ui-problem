@@ -26,6 +26,7 @@ import ShoppingCart from "./Containers/ShoppingCart/ShoppingCart";
 import PieChartRangeInput from "./Containers/PieChartRangeInput/PieChartRangeInput";
 import CssDoodle from "./Containers/CssDoodle/CssDoodle";
 import ChildrenParentsRerenders from "./Containers/ChildrenParentsRerenders/ChildrenParentsRerenders";
+import TextToSpeech from "./Containers/TextToSpeech/TextToSpeech";
 
 function App() {
     return ( 
@@ -57,6 +58,7 @@ function App() {
                     <Route path="/pie-char-range-input" element={<PieChartRangeInput />} />
                     <Route path="/css-doodle" element={<CssDoodle />} />
                     <Route path="/children-parents-re-renders" element={<ChildrenParentsRerenders />} />
+                    <Route path="/text-to-speech" element={<TextToSpeech />} />
                 </Route>
             </Routes>
         </div>
