@@ -30,36 +30,36 @@ import ChildrenParentsRerenders from "./Containers/ChildrenParentsRerenders/Chil
 function App() {
     return ( 
         <div className = "App">
-        <Headers />
-        <Routes>
-            <Route path="/" element={<Home />}> 
-                <Route path="/pagination" element={<Pagination />} />
-                <Route path="/countdown-timer" element={<CountdownTimer />} />
-                <Route path="/lazy-loading" element={<LazyLoading />} />
-                <Route path="/star-rating" element={<StarRating />} />
-                <Route path="/text-search" element={<TextSearch />} />
-                <Route path="/carousel" element={<Carousel />} />
-                <Route path="/table" element={<Table />} />
-                <Route path="/stop-watch" element={<Stopwatch />} />
-                <Route path="/todo" element={<Todo />} />
-                <Route path="/folder-structure" element={<FolderStructure />} />
-                <Route path="/infinte-scroll" element={<InfinteScroll />} />
-                <Route path="/accordion" element={<Accordion />} />
-                <Route path="/quote-generator" element={<QuoteGenerator />} />
-                <Route path="/video-player" element={<VideoPlayer />} />
-                <Route path="/BMI-calculator" element={<BMICalculator />} />
-                <Route path="/loading-images" element={<LoadingImages />} />
-                <Route path="/github-user-search" element={<GitHubUserSearch />} />
-                <Route path="/EMI-calculator" element={<EMICalculator />} />
-                <Route path="/login-form" element={<LoginForm />} />
-                <Route path="/throttle-debounce" element={<ThrottleDebounce />} />
-                <Route path="/shopping-cart" element={<ShoppingCart />} />
-                <Route path="/pie-char-range-input" element={<PieChartRangeInput />} />
-                <Route path="/css-doodle" element={<CssDoodle />} />
-                <Route path="/children-parents-re-renders" element={<ChildrenParentsRerenders />} />
-            </Route>
-        </Routes>
-       </div>
+            <Headers />
+            <Routes>
+                <Route path="/" element={<Home />}> 
+                    <Route path="/pagination" element={<Pagination />} />
+                    <Route path="/countdown-timer" element={<CountdownTimer />} />
+                    <Route path="/lazy-loading" element={<LazyLoading />} />
+                    <Route path="/star-rating" element={<StarRating />} />
+                    <Route path="/text-search" element={<TextSearch />} />
+                    <Route path="/carousel" element={<Carousel />} />
+                    <Route path="/table" element={<Table />} />
+                    <Route path="/stop-watch" element={<Stopwatch />} />
+                    <Route path="/todo" element={<Todo />} />
+                    <Route path="/folder-structure" element={<FolderStructure />} />
+                    <Route path="/infinte-scroll" element={<InfinteScroll />} />
+                    <Route path="/accordion" element={<Accordion />} />
+                    <Route path="/quote-generator" element={<QuoteGenerator />} />
+                    <Route path="/video-player" element={<VideoPlayer />} />
+                    <Route path="/BMI-calculator" element={<BMICalculator />} />
+                    <Route path="/loading-images" element={<LoadingImages />} />
+                    <Route path="/github-user-search" element={<GitHubUserSearch />} />
+                    <Route path="/EMI-calculator" element={<EMICalculator />} />
+                    <Route path="/login-form" element={<LoginForm />} />
+                    <Route path="/throttle-debounce" element={<ThrottleDebounce />} />
+                    <Route path="/shopping-cart" element={<ShoppingCart />} />
+                    <Route path="/pie-char-range-input" element={<PieChartRangeInput />} />
+                    <Route path="/css-doodle" element={<CssDoodle />} />
+                    <Route path="/children-parents-re-renders" element={<ChildrenParentsRerenders />} />
+                </Route>
+            </Routes>
+        </div>
     );
 }
 
