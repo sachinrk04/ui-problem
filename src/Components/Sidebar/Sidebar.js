@@ -81,6 +81,9 @@ export default function Sidebar() {
                 <li className={`side-page-nav_item`} >
                     <Link to="/text-to-speech">Text To Speech</Link>
                 </li>
+                <li className={`side-page-nav_item`} >
+                    <Link to="/code-editor">Code Editor</Link>
+                </li>
             </ul>
         </div>
     );
