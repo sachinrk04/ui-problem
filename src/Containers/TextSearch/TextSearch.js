@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import "./TextSearch.scss";
 
 export default function TextSearch() {
-    const [list, setList] = useState(['apple', 'kiwi', 'pears']);
+    const [list, setList] = useState(['apple', 'kiwi', 'pears', "123", "356344", 575]);
     const [searchText, setSearchText] = useState("");
     
     const searchResult = list.filter((item) => {
-        return item.toLowerCase().includes(searchText.toLowerCase());
+        return item.toString().toLowerCase().includes(searchText.toLowerCase());
     })
 
     return (
