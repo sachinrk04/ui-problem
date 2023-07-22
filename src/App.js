@@ -1,8 +1,9 @@
 import { Routes, Route } from "react-router-dom";
 import './App.scss';
+import Headers from "./Components/Headers/Headers";
 import Home from "./Containers/Home";
 import Pagination from "./Containers/Pagination/Pagination";
-import Headers from "./Components/Headers/Headers";
+import TodoComment from "./Containers/TodoComment/TodoComment";
 import CountdownTimer from "./Containers/CountdownTimer/CountdownTimer";
 import LazyLoading from "./Containers/LazyLoading/LazyLoading";
 import StarRating from "./Containers/StarRating/StarRating";
@@ -36,6 +37,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home />}> 
                     <Route path="/pagination" element={<Pagination />} />
+                    <Route path="/todo-comment" element={<TodoComment />} />
                     <Route path="/countdown-timer" element={<CountdownTimer />} />
                     <Route path="/lazy-loading" element={<LazyLoading />} />
                     <Route path="/star-rating" element={<StarRating />} />

@@ -2,7 +2,7 @@ import React from 'react';
 import "./Home.scss";
 import { Outlet } from 'react-router-dom';
 import Sidebar from '../Components/Sidebar/Sidebar';
-import HomeContent from '../Components/HomeContent/HomeContent';
+// import HomeContent from '../Components/HomeContent/HomeContent';
 
 export default function Home() {
     return (
@@ -11,7 +11,7 @@ export default function Home() {
                 <Sidebar />
             </div>
             <div className='home-page'>
-                <HomeContent />
+                {/* <HomeContent /> */}
                 <Outlet />
             </div>
         </div>

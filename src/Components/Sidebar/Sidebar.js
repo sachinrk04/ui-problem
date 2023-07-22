@@ -10,6 +10,9 @@ export default function Sidebar() {
                     <Link to="/pagination">Pagination</Link>
                 </li>
                 <li className={`side-page-nav_item`} >
+                    <Link to="/todo-comment">Todo Comment</Link>
+                </li>
+                <li className={`side-page-nav_item`} >
                     <Link to="/countdown-timer">Countdown Timer</Link>
                 </li>
                 <li className={`side-page-nav_item`} >
