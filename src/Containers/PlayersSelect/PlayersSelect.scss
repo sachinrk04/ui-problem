@@ -1,0 +1,39 @@
+.players-select {
+    padding: 10px;
+    margin: 10px;
+
+    .players-view-lists {
+        margin-bottom: 20px;
+        h2 {
+            margin: 0px;
+        }
+        .players-lists {
+          display: flex;
+          .player {
+            margin: 10px 10px 0px 0px;
+            cursor: pointer;
+          }
+          .no-player {
+            margin: 5px 0px;
+            color: red;;
+          }
+        }
+    }
+
+    .player-actions {
+        margin: 10px 0px;
+        button {
+            margin-right: 10px;
+        }
+    }
+    
+    .selected-teams {
+      display: flex;
+      background-color: gainsboro;
+      justify-content: space-around;
+
+      .teams-player {
+        margin: 5px 0px;
+      }
+    }
+}

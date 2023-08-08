@@ -28,6 +28,7 @@ import PieChartRangeInput from "./Containers/PieChartRangeInput/PieChartRangeInp
 import CssDoodle from "./Containers/CssDoodle/CssDoodle";
 import ChildrenParentsRerenders from "./Containers/ChildrenParentsRerenders/ChildrenParentsRerenders";
 import TextToSpeech from "./Containers/TextToSpeech/TextToSpeech";
+import PlayersSelect from "./Containers/PlayersSelect/PlayersSelect";
 import CodeEditor from "./Containers/CodeEditor/CodeEditor";
 
 function App() {
@@ -62,6 +63,7 @@ function App() {
                     <Route path="/css-doodle" element={<CssDoodle />} />
                     <Route path="/children-parents-re-renders" element={<ChildrenParentsRerenders />} />
                     <Route path="/text-to-speech" element={<TextToSpeech />} />
+                    <Route path="/players-select" element={<PlayersSelect />} />
                     <Route path="/code-editor" element={<CodeEditor />} />
                 </Route>
             </Routes>
