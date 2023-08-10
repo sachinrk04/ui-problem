@@ -16,6 +16,9 @@ export default function Sidebar() {
                     <Link to="/countdown-timer">Countdown Timer</Link>
                 </li>
                 <li className={`side-page-nav_item`} >
+                    <Link to="/editable-table">Editable Table</Link>
+                </li>
+                <li className={`side-page-nav_item`} >
                     <Link to="/lazy-loading">Lazy Loading</Link>
                 </li>
                 <li className={`side-page-nav_item`} >
@@ -87,9 +90,9 @@ export default function Sidebar() {
                 <li className={`side-page-nav_item`} >
                     <Link to="/players-select">Players Select</Link>
                 </li>
-                {/* <li className={`side-page-nav_item`} >
+                <li className={`side-page-nav_item`} >
                     <Link to="/code-editor">Code Editor</Link>
-                </li> */}
+                </li>
             </ul>
         </div>
     );
