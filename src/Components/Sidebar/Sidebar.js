@@ -19,6 +19,9 @@ export default function Sidebar() {
                     <Link to="/editable-table">Editable Table</Link>
                 </li>
                 <li className={`side-page-nav_item`} >
+                    <Link to="/white-board">White Board</Link>
+                </li>
+                <li className={`side-page-nav_item`} >
                     <Link to="/lazy-loading">Lazy Loading</Link>
                 </li>
                 <li className={`side-page-nav_item`} >
@@ -89,6 +92,9 @@ export default function Sidebar() {
                 </li>
                 <li className={`side-page-nav_item`} >
                     <Link to="/players-select">Players Select</Link>
+                </li>
+                <li className={`side-page-nav_item`} >
+                    <Link to="/add-user-in-list">Add User In List</Link>
                 </li>
                 <li className={`side-page-nav_item`} >
                     <Link to="/code-editor">Code Editor</Link>
