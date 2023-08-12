@@ -5,7 +5,7 @@ import Home from "./Containers/Home";
 import Pagination from "./Containers/Pagination/Pagination";
 import TodoComment from "./Containers/TodoComment/TodoComment";
 import CountdownTimer from "./Containers/CountdownTimer/CountdownTimer";
-import EditableTable from "./Containers/EditableTable/EditableTable";
+import EditableExcelTable from "./Containers/EditableExcelTable/EditableExcelTable";
 import Whiteboard from "./Containers/Whiteboard/Whiteboard";
 import LazyLoading from "./Containers/LazyLoading/LazyLoading";
 import StarRating from "./Containers/StarRating/StarRating";
@@ -43,7 +43,7 @@ function App() {
                     <Route path="/pagination" element={<Pagination />} />
                     <Route path="/todo-comment" element={<TodoComment />} />
                     <Route path="/countdown-timer" element={<CountdownTimer />} />
-                    <Route path="/editable-table" element={<EditableTable />} />
+                    <Route path="/editable-excel-table" element={<EditableExcelTable />} />
                     <Route path="/white-board" element={<Whiteboard />} />
                     <Route path="/lazy-loading" element={<LazyLoading />} />
                     <Route path="/star-rating" element={<StarRating />} />

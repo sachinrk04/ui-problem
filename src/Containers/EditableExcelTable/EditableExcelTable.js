@@ -1,14 +1,14 @@
 import React from 'react';
 import "pikaday/css/pikaday.css";
-import "./EditableTable.scss";
+import "./EditableExcelTable.scss";
 import { HotTable, HotColumn } from "@handsontable/react";
 import { data } from "./tableData";
 import { drawCheckboxInRowHeaders, addClassesToRows, changeCheckboxCell, alignHeaders } from "./hooksCallbacks";
 import "handsontable/dist/handsontable.min.css";
-import ProgressBar from '../../Components/EditableTableComponent/ProgressBar';
-import Stars from '../../Components/EditableTableComponent/Stars';
+import ProgressBar from '../../Components/EditableExcelTableComponent/ProgressBar';
+import Stars from '../../Components/EditableExcelTableComponent/Stars';
 
-export default function EditableTable() {
+export default function EditableExcelTable() {
     return (
         <div className='editable-table'>
             <HotTable

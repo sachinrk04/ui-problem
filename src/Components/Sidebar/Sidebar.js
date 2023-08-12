@@ -16,7 +16,7 @@ export default function Sidebar() {
                     <Link to="/countdown-timer">Countdown Timer</Link>
                 </li>
                 <li className={`side-page-nav_item`} >
-                    <Link to="/editable-table">Editable Table</Link>
+                    <Link to="/editable-excel-table">Excel Table</Link>
                 </li>
                 <li className={`side-page-nav_item`} >
                     <Link to="/white-board">White Board</Link>
