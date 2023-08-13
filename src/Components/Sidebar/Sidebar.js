@@ -37,6 +37,9 @@ export default function Sidebar() {
                     <Link to="/table">Table</Link>
                 </li>
                 <li className={`side-page-nav_item`} >
+                    <Link to="/table-editable">Table Editable</Link>
+                </li>
+                <li className={`side-page-nav_item`} >
                     <Link to="/stop-watch">Stopwatch</Link>
                 </li>
                 <li className={`side-page-nav_item`} >

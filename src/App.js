@@ -33,6 +33,7 @@ import TextToSpeech from "./Containers/TextToSpeech/TextToSpeech";
 import PlayersSelect from "./Containers/PlayersSelect/PlayersSelect";
 import CodeEditor from "./Containers/CodeEditor/CodeEditor";
 import AddUserInList from "./Containers/AddUserInList/AddUserInList";
+import TableEditable from "./Containers/TableEditable/TableEditable";
 
 function App() {
     return ( 
@@ -50,6 +51,7 @@ function App() {
                     <Route path="/text-search" element={<TextSearch />} />
                     <Route path="/carousel" element={<Carousel />} />
                     <Route path="/table" element={<Table />} />
+                    <Route path="/table-editable" element={<TableEditable />} />
                     <Route path="/stop-watch" element={<Stopwatch />} />
                     <Route path="/todo" element={<Todo />} />
                     <Route path="/folder-structure" element={<FolderStructure />} />
