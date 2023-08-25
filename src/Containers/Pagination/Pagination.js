@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import "./Pagination.scss";
+import Spinner from '../../Components/Spinner/Spinner';
 
 export default function Pagination() {
     const [products, setProducts] = useState([]);
@@ -30,17 +31,22 @@ export default function Pagination() {
     return ( 
         <div className = 'pagination-page' > 
             {
-                products.length > 0 && ( 
-                    <div className = "products" > {
-                        products.map((product) => {
-                            return ( <span className = 'products__single' key = { product.id } >
-                                <img src = { product.thumbnail }alt = { product.title }/> 
-                                <span > { product.title } </span> 
-                                </span>
-                            )
-                        })
-                    } 
+                products.length > 0 ? ( 
+                    <div className="products" >
+                        {
+                            products.map((product) => {
+                                return ( <span className = 'products__single' key = { product.id } >
+                                    <img src = { product.thumbnail }alt = { product.title }/> 
+                                    <span > { product.title } </span> 
+                                    </span>
+                                )
+                            })
+                        } 
                     </div>
+                ) : (
+                        <div className='products-null'>
+                            <Spinner />
+                        </div>
                 )
             } 
             {

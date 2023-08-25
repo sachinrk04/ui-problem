@@ -11,8 +11,9 @@ export default function TodosValue() {
         }
     }
 
-    function deleteTodo(i) {
-        setTodos(todos.filter((j) => j !== i));
+    function deleteTodo(e) {
+        let id = e.target.dataset.id;
+        setTodos(todos.filter((j) => j !== id));
     }
 
     return (
@@ -30,10 +31,10 @@ export default function TodosValue() {
             />
             <button onClick={() => addTask(value)}>Add Task</button>
 
-            <ul>
+            <ul onClick={(e) => deleteTodo(e)}>
                 {todos.map((i) => (
                 <li key={i}>
-                    {i} <button onClick={() => deleteTodo(i)}>delete</button>
+                    {i} <button data-id={i}>delete</button>
                 </li>
                 ))}
             </ul>

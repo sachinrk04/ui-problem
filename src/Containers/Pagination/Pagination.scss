@@ -1,8 +1,13 @@
 .pagination-page {
+    .products-null {
+        height: 94vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     .products {
         margin: 20px;
         padding: 0px;
-        // list-style-type: none;
         display: grid;
         gap: 20px;
         grid-template-columns: 1fr 1fr 1fr;

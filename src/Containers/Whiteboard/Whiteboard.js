@@ -6,24 +6,24 @@ import "./Whiteboard.scss";
 const gen = rough.generator();
 
 function createElement(id, x1, y1, x2, y2) {
-  const roughEle = gen.line(x1, y1, x2, y2);
-  return { id, x1, y1, x2, y2, roughEle };
+    const roughEle = gen.line(x1, y1, x2, y2);
+    return { id, x1, y1, x2, y2, roughEle };
 }
 
 const midPointBtw = (p1, p2) => {
-  return {
-    x: p1.x + (p2.x - p1.x) / 2,
-    y: p1.y + (p2.y - p1.y) / 2,
-  };
+    return {
+        x: p1.x + (p2.x - p1.x) / 2,
+        y: p1.y + (p2.y - p1.y) / 2,
+    };
 };
 
 export const adjustElementCoordinates = (element) => {
-  const { type, x1, y1, x2, y2 } = element;
-  if (x1 < x2 || (x1 === x2 && y1 < y2)) {
-    return { x1, y1, x2, y2 };
-  } else {
-    return { x1: x2, y1: y2, x2: x1, y2: y1 };
-  }
+    const { x1, y1, x2, y2 } = element;
+    if (x1 < x2 || (x1 === x2 && y1 < y2)) {
+        return { x1, y1, x2, y2 };
+    } else {
+        return { x1: x2, y1: y2, x2: x1, y2: y1 };
+    }
 };
 
 export default function Whiteboard() {

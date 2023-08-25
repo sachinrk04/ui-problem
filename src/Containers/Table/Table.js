@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import "./Table.scss";
+import Spinner from '../../Components/Spinner/Spinner';
 const URL = 'https://reqres.in/api/users';
 
 export default function Table() {
@@ -21,32 +22,33 @@ export default function Table() {
         getData();
     }, []);
 
-    console.log("tableData--->", tableData)
     return (
         <div className='table-page'>
             {
                 tableData.length > 0 ?
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Icon</th>
-                            <th>Name</th>
-                            <th>Email</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {tableData.map((item) => (
-                            <tr key={item.id}>
-                                <td>
-                                    <img className="table-icon" src={item.avatar} alt={item.first_name} />
-                                </td>
-                                <td>{`${item.first_name} ${item.last_name}`}</td>
-                                <td>{item.email}</td>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Icon</th>
+                                <th>Name</th>
+                                <th>Email</th>
                             </tr>
-                        ))}
-                    </tbody>
-                </table>
-                : <div>No list</div>
+                        </thead>
+                        <tbody>
+                            {tableData.map((item) => (
+                                <tr key={item.id}>
+                                    <td>
+                                        <img className="table-icon" src={item.avatar} alt={item.first_name} />
+                                    </td>
+                                    <td>{`${item.first_name} ${item.last_name}`}</td>
+                                    <td>{item.email}</td>
+                                </tr>
+                            ))}
+                        </tbody>
+                    </table>
+                : <div className='table-data-null'>
+                      <Spinner />  
+                </div>
             }
         </div>
     )
