@@ -1,60 +1,60 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 import "./Stopwatch.scss";
 
 export default function Stopwatch() {
-    const [time, setTime] = useState(0);
-    const [isActive, setIsActive] = useState(false);
+  const [time, setTime] = useState(0);
+  const [isActive, setIsActive] = useState(false);
 
-    useEffect(() => {
-        let interval;
-        if (isActive) {
-            interval = setInterval(() => {
-                setTime((time) => {
-                    if (time > 0) {
-                        return time - 1;
-                    } else {
-                        setIsActive(false);
-                        return 0
-                    }
-                });
-            }, 1000);
-        }
-        return () => clearInterval(interval);
-    }, [isActive]);
-
-    const formatTime = (time) => {
-        const hours = Math.floor(time / 3600).toString().padStart(2, "0");
-        const minutes = Math.floor((time % 3600) / 60).toString().padStart(2, "0");
-        const seconds = (time % 60).toString().padStart(2, "0");
-
-        return `${hours}:${minutes}:${seconds}`
+  useEffect(() => {
+    let interval;
+    if (isActive) {
+      interval = setInterval(() => {
+        setTime((time) => {
+          return time + 1;
+        });
+      }, 1000);
     }
+    return () => clearInterval(interval);
+  }, [isActive]);
 
-    const handleStart = () => {
-        setTime(5400);
-        setIsActive(true)
-    }
+  const formatTime = (time) => {
+    const hours = Math.floor(time / 3600)
+      .toString()
+      .padStart(2, "0");
+    const minutes = Math.floor((time % 3600) / 60)
+      .toString()
+      .padStart(2, "0");
+    const seconds = (time % 60).toString().padStart(2, "0");
 
-    const handlePauseResume = () => {
-        setIsActive(!isActive);
-      };
+    return `${hours}:${minutes}:${seconds}`;
+  };
 
-    const handleStop = () => {
-        setTime(0);
-        setIsActive(false)
-    }
+  const handleStart = () => {
+    setTime(0);
+    setIsActive(true);
+  };
 
-    return (
-        <div className='stopwatch'>
-            <h1>Stopwatch</h1>
+  const handlePauseResume = () => {
+    setIsActive(!isActive);
+  };
 
-            <p>{formatTime(time)}</p>
+  const handleStop = () => {
+    setTime(0);
+    setIsActive(false);
+  };
 
-            <button onClick={handleStart}>Start</button>
-            <button onClick={handlePauseResume}>
-                {isActive ? 'Pause' : 'Resume'}
-            </button>
-            <button onClick={handleStop}>Stop</button>
-        </div>
-    )
+  return (
+    <div className="stopwatch">
+      <h1>Stopwatch</h1>
+
+      <p>{formatTime(time)}</p>
+
+      <button onClick={isActive ? handleStop : handleStart}>
+        {isActive ? "Stop" : "Start"}
+      </button>
+      <button onClick={handlePauseResume}>
+        {isActive ? "Pause" : "Resume"}
+      </button>
+    </div>
+  );
 }

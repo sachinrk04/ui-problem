@@ -1,0 +1,19 @@
+.ccp-container {
+  padding: 10px;
+  .counter-contair {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+      padding: 10px;
+      margin: 0%;
+      color: red;
+      font-weight: 800;
+      font-size: 20px;
+    }
+    button {
+      margin: 5px;
+      padding: 0;
+    }
+  }
+}
